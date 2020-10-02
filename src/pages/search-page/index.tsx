@@ -90,15 +90,32 @@ export const VideoSearchPage = () => {
 
 function Footer() {
   return (
-    <div style={{width: '100%', height: '100%', backgroundColor: '#EBF1F5', display: 'flex', alignItems: 'center', padding: '10px', flexDirection: 'row-reverse', justifyContent: 'space-between'}}>
-      <a href={'https://github.com/jbeck18'} target={'_blank'} rel={'noopener noreferrer'}>
-        {/*<img
-          src={'https://img.shields.io/badge/View%20Source-Github️-green?style=for-the-badge'}
-          alt={'Link To Github'}
-        />*/}
-
-      </a>
+    <div
+      style={{
+        width: '100%',
+        height: '100%',
+        backgroundColor: '#EBF1F5',
+        display: 'flex',
+        alignItems: 'center',
+        padding: '10px',
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+      }}
+    >
       <MadeWithLove />
+
+      <div>
+        <UnstyledAnchor
+          href={'https://github.com/ethopedia'}
+          target={'_blank'}
+          rel={'noopener noreferrer'}
+        >
+          <img
+            src={'https://img.shields.io/badge/SOURCE%20CODE-GITHUB-green?style=for-the-badge'}
+            alt={'View source code on github'}
+          />
+        </UnstyledAnchor>
+      </div>
     </div>
 
   )
