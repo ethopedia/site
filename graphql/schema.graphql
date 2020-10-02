@@ -1,0 +1,45 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Mutation
+
+type Query {
+    "Searches for a random video matching the search text"
+    getRandomVideoMatchingSearch(searchText: String!): SearchResult
+    ping: String!
+    "Searches for videos matching the provided search text"
+    searchVideos(limit: Int! = 0, offset: Int! = 0, searchText: String!): [SearchResult!]!
+}
+
+type SearchResult {
+    episodeNumber: Int!
+    id: ID!
+    """
+
+    The phrase that matched the query
+    This text has <b> tags to denote the matched parts of the phrase
+    """
+    matchedText: String!
+    startTime: Int!
+    videoId: String!
+    videoName: String!
+}
+
+input PageOptions {
+    limit: Int!
+    offset: Int!
+}
+
+
+"A custom scalar that handles date values"
+scalar Date
+
+"A custom scalar that handles datetime values"
+scalar DateTime
+
+"A custom scalar that handles UUID values"
+scalar UUID
