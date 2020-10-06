@@ -59,6 +59,7 @@ export const SearchPageWithResults = () => {
         limit: 25
       }
     })
+    // eslint-disable-next-line
   }, [doSearch, search])
 
   const { width } = useWindowDimensions()

@@ -40,6 +40,7 @@ export const ImFeelingLuckyButton = ({ text } : { text: string }) => {
   return (
     <>
       <Button
+        disabled={!text}
         style={{outline: 'none'}}
         onClick={doSearch}
       >

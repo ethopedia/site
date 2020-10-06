@@ -21,10 +21,12 @@ export const YoutubeVideo = (props: YoutubeVideoProps) => {
 
   const [isVideoRendered, setIsVideoRendered] = React.useState(true);
 
+  /*
   let videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`
   if (startTime) {
     videoUrl += `&start=${startTime}`
   }
+   */
 
   return (
     <YoutubeVideoContainer>
