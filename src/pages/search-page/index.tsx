@@ -147,6 +147,7 @@ function SearchBar(props: BasicSearchBarProps) {
         inputRef?.current?.focus()
       }
     }
+    // eslint-disable-next-line
   }, [])
 
   return (
@@ -206,6 +207,7 @@ export const BasicSearchBar = (props: BasicSearchBarProps) => {
   React.useEffect(() => {
     setCurrentSearchText(defaultValue)
     onChange(defaultValue)
+    // eslint-disable-next-line
   }, [defaultValue])
 
   React.useEffect(() => {

@@ -1,4 +1,5 @@
 import React from 'react';
+// eslint-disable-next-line
 import _ from 'lodash';
 
 const choices = [
@@ -10,6 +11,7 @@ const choices = [
     >
       <img
         title={'Fan Art by /u/tanya3140'}
+        alt={'Fan Art by /u/tanya3140'}
         src={'https://www.ethopedia.org/resources/ethopedia-search-image-min.png'}
         width={300}
         height={300}
@@ -25,6 +27,7 @@ const choices = [
       <img
         style={{borderRadius: '35px', marginBottom: '25px'}}
         title={'Fan Art by /u/1AndOnlyRuthy'}
+        alt={'Fan Art by /u/1AndOnlyRuthy'}
         src={'https://imgur.com/w0Hldqc.png'}
         width={450}
         height={275}

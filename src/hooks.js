@@ -53,6 +53,7 @@ export function usePersistentQueryParam(paramName) {
     }
 
     return () => window.removeEventListener('hashchange', onHashChange)
+    // eslint-disable-next-line
   }, [])
 
   function clearParams() {
